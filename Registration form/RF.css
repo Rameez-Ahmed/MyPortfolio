@@ -1,0 +1,43 @@
+*{
+    background-color: #dde7dc ;
+}
+.head{
+    margin-bottom: 50px;
+}
+.saylani_logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+.srf{
+    display: block;
+    margin-left: auto;
+    margin-right: 30%;
+    width: 30%;
+    font-family: serif;
+    font-size: 20px;
+    color: slateblue;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.info{
+     margin-left: 35%;
+    margin-right: 50%;
+    align-items: center;
+    width: 35%;
+    color:  black;
+}
+.input{
+    background-color: #eb1684 !important;
+}
+
+#sub{
+    background-color: white;
+    margin-left: 50%;
+    margin-top: 5%;
+}
+#rset{
+     background-color: white;
+}

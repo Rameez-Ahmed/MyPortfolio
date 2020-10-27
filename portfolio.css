@@ -5,11 +5,11 @@ body{
 }
 
 header{
-	position: fixed;
+/*	position: fixed;*/
 	background:  #0e0606;
 	padding: 20px;
 	width: 100%;
-	height: 30px;
+	height: 100%;
 
 }
 
@@ -48,12 +48,14 @@ header{
 
 .sidebar{
 	background: #797171;
-	margin-top: 70px;
+	/*margin-top: 10px;*/
 	padding-top: 30px;
 	position: fixed;
 	left: 0;
 	width: 250px;
 	height: 100%;
+	transition: 0.5s;
+	transition-property: left;
 }
 
 .sidebar .profile_image{
@@ -64,7 +66,7 @@ header{
 
 }
 
-.sidebar h3{
+.sidebar h4{
 	color:  #fc6d0b;
 	margin-top: 0;
 	margin-bottom: 20px;
@@ -89,3 +91,43 @@ header{
 .sidebar i{
 	padding-right: 10px;
 }
+
+label #siderbar_btn{
+	z-index: 1;
+	color:  #f57a26;
+	/*position: fixed;*/
+	cursor: pointer;
+	/*left: 300px;*/
+	font-size: 20px;
+	margin: 5px 200px;
+	transition: 0.2s;
+	transition-property: color;
+}
+
+label #siderbar_btn:hover{
+	color:  #33ff57;
+
+}
+
+#check:checked ~ .sidebar{
+	left: -190px;
+}
+
+#check:checked ~ .sidebar a span{
+	display: none;
+}
+
+#check:checked ~.sidebar a{
+	font-size: 20px;
+	margin-left: 170px;
+	width: 80px;
+}
+
+.card-deck{
+	position: center;
+	padding-top: 300px;
+	margin-left: 500px;
+	height: 100vh;
+}
+
+
